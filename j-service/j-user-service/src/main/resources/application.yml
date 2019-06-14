@@ -1,0 +1,19 @@
+server:
+  port: 8671
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/jwt
+    username: root
+    password: 152033
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10010/eureka
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    instance-id: ${spring.application.name}.${server.port}
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15

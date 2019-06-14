@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="j-auth-common" />
+        <module name="j-auth-service" />
+        <module name="j-common" />
+        <module name="j-eureka" />
+        <module name="j-user-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="j-authcommon" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="j-auth" options="-parameters" />
+      <module name="j-auth-common" options="-parameters" />
+      <module name="j-auth-service" options="-parameters" />
+      <module name="j-authcommon" options="-parameters" />
+      <module name="j-common" options="-parameters" />
+      <module name="j-eureka" options="-parameters" />
+      <module name="j-user-service" options="-parameters" />
+    </option>
+  </component>
+</project>
